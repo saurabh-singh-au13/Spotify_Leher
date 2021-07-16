@@ -1,0 +1,162 @@
+$greyDark: #040404;
+$greyLight: #131313;
+$greyLighter: #282828;
+$greyText: #b3b3b3;
+$greyNav: #090909;
+
+
+*{
+  box-sizing: border-box;
+
+}
+.App{
+  height: calc(100vh - 90px);
+  background-color: $greyLight;
+  display: flex;
+
+}
+.outerWrap{
+  background: grey;
+  height: 100vh;
+  min-height: 100%;
+
+}
+.navBar{
+  width: 250px;
+  height: calc(100%-90px);
+  background: $greyDark;
+  padding: 10px;
+  .logo{
+    padding: 2rem;
+    svg{
+      max-width: 130px;
+      path{
+        fill: white;
+      }
+    }
+  }
+  ul{
+    li{
+      color: $greyText;
+      list-style-type:none;
+      border-radius: 5px;
+      margin-top: 10px;
+      padding: 0.6rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: all 0.3s ease-in-out;
+      &:hover{
+        color:white
+
+
+      }
+
+    }
+  }
+}
+.musicfooter{
+  background: $greyLighter;
+  text-align: center;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+}
+.upper_nav{
+  background: $greyNav;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 9px;
+  position: fixed;
+  .user{
+    justify-content: space-around;
+  
+    
+  }
+  
+ 
+  
+
+}
+.main{
+  // overflow: hidden;
+  width: 100%;
+  // overflow-x: auto;
+  overflow-y: scroll;
+  .main_component{
+    overflow: hidden;
+    color: white;
+    // padding: 4rem;
+    // margin-left: 2px;
+    padding: 3rem;
+    margin-left: -22px;
+    h1{
+      font-size: 1.5rem;
+    }
+
+  }
+
+}
+.cardWrap{
+  display: flex;
+  padding: 10px;
+  margin-top: 1pxpx;
+  .card{
+    background: $greyLighter;
+    border-radius: 10px;
+    width: 200px;
+    overflow: hidden;
+    padding: 17px;
+    margin-left: 15px;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+
+    .cardImage{
+      height: 170px;
+      box-shadow: 0 10px 30px 0 rgba(0,0,0,0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .cardContent{
+      padding: 0.9rem;
+      color: white;
+
+      h3{
+        font-weight: 600;
+      }
+    }
+  }
+}
+.button {
+  // appearance: auto;
+  // // -webkit-writing-mode: horizontal-tb !important;
+  // text-rendering: auto;
+  // color: -internal-light-dark(black, white);
+  // letter-spacing: normal;
+  // word-spacing: normal;
+  // text-transform: none;
+  // text-indent: 0px;
+  // text-shadow: none;
+  // display: inline-block;
+  // text-align: center;
+  // align-items: flex-start;
+  // cursor: default;
+  // background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+  // box-sizing: border-box;
+  // margin: 0em;
+  // font: 400 13.3333px Arial;
+  // padding: 1px 6px;
+  // border-width: 2px;
+  // border-style: outset;
+  // border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  // border-image: initial;
+  border-radius: 50%;
+}
